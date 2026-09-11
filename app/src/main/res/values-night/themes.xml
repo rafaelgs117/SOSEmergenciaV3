@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.SOSEmergencia" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/sos_red</item>
+        <item name="colorPrimaryVariant">@color/sos_orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/sos_orange</item>
+        <item name="android:statusBarColor">@color/sos_red</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSosPrimary">@color/sos_red</item>
+        <item name="colorSosSecondary">@color/sos_orange</item>
+        <item name="colorSosSurface">@color/surface</item>
+        <item name="colorSosOnPrimary">@color/white</item>
+    </style>
+    <style name="Theme.SOSEmergencia.Dark" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/sos_red</item>
+        <item name="colorPrimaryVariant">@color/sos_orange</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/sos_red</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="colorSosPrimary">@color/sos_red</item>
+        <item name="colorSosSecondary">@color/sos_orange</item>
+        <item name="colorSosSurface">@color/surface</item>
+        <item name="colorSosOnPrimary">@color/white</item>
+    </style>
+    <style name="Theme.SOSEmergencia.Daltonism" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/dalton_primary</item>
+        <item name="colorPrimaryVariant">@color/dalton_secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor">@color/dalton_primary</item>
+        <item name="android:windowBackground">@color/dalton_bg</item>
+        <item name="colorSosPrimary">@color/dalton_primary</item>
+        <item name="colorSosSecondary">@color/dalton_secondary</item>
+        <item name="colorSosSurface">@color/dalton_surface</item>
+        <item name="colorSosOnPrimary">@color/white</item>
+    </style>
+</resources>

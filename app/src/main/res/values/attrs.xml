@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Atributos de tema personalizados — resolvidos em tempo de execução pelo tema ativo -->
+    <attr name="colorSosPrimary"   format="color" />
+    <attr name="colorSosSecondary" format="color" />
+    <attr name="colorSosSurface"   format="color" />
+    <attr name="colorSosOnPrimary" format="color" />
+</resources>
