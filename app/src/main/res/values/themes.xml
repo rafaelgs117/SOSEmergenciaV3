@@ -47,4 +47,36 @@
         <item name="colorSosOnPrimary">@color/white</item>
     </style>
 
+        <!-- ── Tema Daltônico (Protanopia — dificuldade com vermelho) ──────────── -->
+    <style name="Theme.SOSEmergencia.Protanopia"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/protan_primary</item>
+        <item name="colorPrimaryVariant">@color/protan_secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/protan_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/protan_primary</item>
+        <item name="android:windowBackground">@color/protan_bg</item>
+        <item name="colorSosPrimary">@color/protan_primary</item>
+        <item name="colorSosSecondary">@color/protan_secondary</item>
+        <item name="colorSosSurface">@color/protan_surface</item>
+        <item name="colorSosOnPrimary">@color/white</item>
+    </style>
+    <!-- ── Tema Daltônico (Tritanopia — dificuldade com azul/amarelo) ──────────── -->
+    <style name="Theme.SOSEmergencia.Tritanopia"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/tritan_primary</item>
+        <item name="colorPrimaryVariant">@color/tritan_secondary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/tritan_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@color/tritan_primary</item>
+        <item name="android:windowBackground">@color/tritan_bg</item>
+        <item name="colorSosPrimary">@color/tritan_primary</item>
+        <item name="colorSosSecondary">@color/tritan_secondary</item>
+        <item name="colorSosSurface">@color/tritan_surface</item>
+        <item name="colorSosOnPrimary">@color/white</item>
+    </style>
+    
+
 </resources>
