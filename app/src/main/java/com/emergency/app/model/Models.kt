@@ -34,4 +34,4 @@ data class EmergencyContact(
     val phone:        String
 )
 
-enum class AppTheme { NORMAL, DARK, DALTONISM }
+enum class AppTheme { NORMAL, DARK, DALTONISM, PROTANOPIA, TRITANOPIA }
