@@ -21,6 +21,15 @@ object ThemeHelper {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 activity.setTheme(R.style.Theme_SOSEmergencia)
             }
+            
+            AppTheme.PROTANOPIA -> {                                // ← novo
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                activity.setTheme(R.style.Theme_SOSEmergencia_Protanopia)
+            }
+            AppTheme.TRITANOPIA -> {                                // ← novo
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                activity.setTheme(R.style.Theme_SOSEmergencia_Tritanopia)
+            }
         }
     }
 }
