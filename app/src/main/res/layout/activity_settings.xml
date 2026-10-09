@@ -74,6 +74,22 @@
                         android:textColor="@color/text_primary"
                         android:textSize="15sp" />
 
+                    <RadioButton
+                        android:id="@+id/rbProtanopia"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="🟠  Modo Protanopia (laranja/ciano)"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="15sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbTritanopia"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="🌸  Modo Tritanopia (magenta/verde)"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="15sp" />
+
                 </RadioGroup>
 
                 <TextView
