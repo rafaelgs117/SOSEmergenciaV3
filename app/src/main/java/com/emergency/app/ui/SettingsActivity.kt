@@ -32,6 +32,8 @@ class SettingsActivity : AppCompatActivity() {
             AppTheme.NORMAL    -> binding.rbNormal.isChecked    = true
             AppTheme.DARK      -> binding.rbDark.isChecked      = true
             AppTheme.DALTONISM -> binding.rbDaltonism.isChecked = true
+            AppTheme.PROTANOPIA -> binding.rbProtanopia.isChecked = true   // ← novo
+            AppTheme.TRITANOPIA -> binding.rbTritanopia.isChecked = true   // ← novo
         }
         binding.etVoiceKeyword.setText(prefs.getVoiceKeyword())
     }
@@ -40,7 +42,9 @@ class SettingsActivity : AppCompatActivity() {
         val newTheme = when {
             binding.rbDark.isChecked      -> AppTheme.DARK
             binding.rbDaltonism.isChecked -> AppTheme.DALTONISM
-            else                          -> AppTheme.NORMAL
+            binding.rbProtanopia.isChecked -> AppTheme.PROTANOPIA  // ← novo
+            binding.rbTritanopia.isChecked -> AppTheme.TRITANOPIA  // ← novo
+            else                           -> AppTheme.NORMAL
         }
 
         // Salva tema e palavra-chave
