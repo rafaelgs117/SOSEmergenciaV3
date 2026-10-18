@@ -137,17 +137,27 @@ class RegisterContactsActivity : AppCompatActivity() {
         }
 
         // Botão remover (só aparece se não for o único contato)
-        val btnRemove = MaterialButton(this,null,
+        val btnRemove = MaterialButton(this, null,
             com.google.android.material.R.attr.borderlessButtonStyle).apply {
             text = "Remover"
             setTextColor(resources.getColor(android.R.color.holo_red_light, theme))
             visibility = if (contactFields.isEmpty()) android.view.View.GONE else android.view.View.VISIBLE
             setOnClickListener {
-                binding.contactsContainer.removeView(card)
-                contactFields.removeAt(index - 1)
-                // Re-numera os títulos
-                renumberCards()
-                updateAddButtonState()
+                // Pega o nome do contato para mostrar no diálogo (se já preenchido)
+                val nomeContato = fields.etName.text.toString().trim()
+                    .takeIf { it.isNotEmpty() } ?: "este contato"
+
+                androidx.appcompat.app.AlertDialog.Builder(this@RegisterContactsActivity) 
+                    .setTitle("Remover contato")
+                    .setMessage("Deseja realmente remover \"$nomeContato\" da lista de emergência?")
+                    .setPositiveButton("Remover") { _, _ ->
+                        binding.contactsContainer.removeView(card) // Remove o card e ajusta a contagem
+                        contactFields.remove(fields)
+                        renumberCards()
+                        updateAddButtonState()
+                    }
+                    .setNegativeButton("Cancelar", null)
+                    .show()
             }
         }
 
